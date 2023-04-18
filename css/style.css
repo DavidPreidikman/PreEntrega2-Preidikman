@@ -1,3 +1,4 @@
+
 body{
 	margin: 0px;
 	padding: 0px;
@@ -127,6 +128,8 @@ ul {
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 3rem;
 }
+
+/*CARDS PRODUCTOS*/
 .contenedor-productos{
   margin-top: 3%;
   margin-right: 15%;
@@ -158,3 +161,197 @@ ul {
     text-align: center;
     transition: all 0.25s;
 }
+
+/*BANNER*/
+.contenedor-info{
+  margin-top: 15px;
+}
+.contenedor-info .swiper-container{
+  margin-top: 15px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.section-informative-banners {
+    background: black;
+    margin-top: 5%;
+}
+
+.section-informative-banners .container{
+    max-width: 1300px;
+    width: 100%;
+    height: 180px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 25px;
+}
+
+.service-item-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*margin-top: 20px;*/
+}
+
+.align-items-center {
+    -ms-flex-align: center!important;
+    align-items: center!important;
+    display: flex;
+} 
+.texto {
+    padding: 0!important;
+    margin-top: 13px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.icono-servicio {
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+
+/*FORMULARIO DE CONTACTO*/
+
+.formularioDeContacto{
+  margin: 0;
+  font-family: monospace;
+}
+
+form {
+  border: 1px solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  margin: auto;
+  background: black;
+  padding: 30px 20px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  transition: all 0.25s
+}
+form:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+input, textarea, select {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 18px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+#miBoton {
+  display: flex;
+  flex-direction: row;
+  justify-content:  center;
+  background:white;
+  color: black;
+}
+
+.miBoton:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+}
+#img-carrito{
+  width: 65px;
+  height: 85px;
+}
+
+/*CARRITO*/
+.submenu {
+  position: relative;
+}
+
+.submenu #carrito{
+  display: none;
+}
+
+.submenu:hover #carrito{
+  display: block;
+  position: absolute;
+  right:0;
+
+  top:100%;
+  z-index: 1;
+  background-color: white;
+  font-size: 15px;
+  min-width: 400px;
+  text-align: center;
+  justify-content:center;
+  text-justify: distribute;
+}
+
+tbody img {
+width: 100%;
+max-width: 100px;
+}
+
+.borrar-producto {
+  background-color: black;
+  border-radius: 50%;
+  padding: 5px 5px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+}
+
+th{
+  font-size: 10px;
+}
+
+#img-carrito {
+  width: 65px;
+  height: 85px;
+}
+
+.submenu #vaciar-carrito{
+background-color: white;
+color: black;
+justify-content: center;
+text-align: center;
+position:relative;
+}
+
+
+
+
+
+
