@@ -1,3 +1,5 @@
+/* 
+
 function saludar(){
 	respuesta = prompt ("Enter your age: ");
 	if (respuesta >= 18){
@@ -8,6 +10,8 @@ function saludar(){
 }
 
 saludar ()
+
+*/
 
 /* Selectores */
 const listaProductos = document.querySelector('#lista-productos');
