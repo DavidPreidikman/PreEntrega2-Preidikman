@@ -1,17 +1,18 @@
-/* 
-
-function saludar(){
-	respuesta = prompt ("Enter your age: ");
-	if (respuesta >= 18){
-		alert ("Welcome to G.O.A.T! The best online shoe store.");
-	} else {
-		alert("Adult supervision is recommended!")
-	}
+function ValidarFormulario(e) {
+    e.preventDefault();
+    let fecha = new Date();
+    alert("Consulta enviada el día " + fecha);
 }
 
-saludar ()
+let boton = document.getElementById("miBoton");
+boton.addEventListener("click", ValidarFormulario);
 
-*/
+
+function capturarEnter(e) {
+    if (e.keyCode == 13 || e.which == 13) {
+        console.log("Enter detectado!");
+    }
+}
 
 /* Selectores */
 const listaProductos = document.querySelector('#lista-productos');
@@ -122,3 +123,16 @@ function borrarCarritoHTML() {
 function guardarCarritoStorage() {
     localStorage.setItem('carrito', JSON.stringify(carrito));
 }
+
+
+
+function saludar(){
+	respuesta = prompt ("Enter your age: ");
+	if (respuesta >= 18){
+		alert ("Welcome to G.O.A.T! The best online shoe store.");
+	} else {
+		alert("Adult supervision is recommended!")
+	}
+}
+
+saludar ()
